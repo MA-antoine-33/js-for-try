@@ -1,0 +1,22 @@
+@mixin button-command {
+    font-size: 1.5em;
+    background-color: $color-background;
+    border-radius: 15px;
+    border: 1px solid $color-secondary;
+    width: 75%;
+}
+
+@mixin button-command_hover {
+    background-color: $color-secondary;
+}
+
+@mixin button-sales {
+    font-size: 1.5em;
+    background-color: $color-secondary;
+    border-radius: 15px;
+    border: 1px solid $color-background;
+}
+
+@mixin button-sales_hover {
+    background-color: $color-background;
+}
