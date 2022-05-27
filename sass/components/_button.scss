@@ -1,0 +1,13 @@
+.button-command {
+@include button-command;
+&:hover {
+    @include button-command_hover
+}
+}
+
+.button-contact-sales {
+    @include button-sales;
+    &:hover {
+        @include button-sales_hover
+    }
+    }

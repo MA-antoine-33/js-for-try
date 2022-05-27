@@ -1,0 +1,13 @@
+body {
+    background-color: $color-primary;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: darken($color-secondary, 50);
+}
+
+h2 {
+    color: darken($color-secondary, 60);
+}

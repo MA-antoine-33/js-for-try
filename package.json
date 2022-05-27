@@ -1,0 +1,26 @@
+{
+  "name": "js-for-try",
+  "version": "1.0.0",
+  "description": "Test JS for a website",
+  "main": "index.js",
+  "scripts": {
+    "sass" : "sass --watch ./sass/main.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MA-antoine-33/js-for-try.git"
+  },
+  "keywords": [
+    "JS",
+    "beginning",
+    "test"
+  ],
+  "author": "MA-antoine-33",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MA-antoine-33/js-for-try/issues"
+  },
+  "homepage": "https://github.com/MA-antoine-33/js-for-try#readme",
+  "browserslist" : "last 4 versions"
+}
