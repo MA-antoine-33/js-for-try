@@ -1,4 +1,4 @@
-//création de la promesse
+//création de la promesse nom + image
 const promiseGetUsers = new Promise(function(resolve, reject){
     if(Product !== 'undefined'){
         resolve(Product)
@@ -7,17 +7,17 @@ const promiseGetUsers = new Promise(function(resolve, reject){
     }
 })
 
-//Récuperer l'état de la promesse
+//Récuperer l'état de la promesse nom
 promiseGetUsers
     .then(function(prod){
+        let liste = '<ul>';
         for (let user of prod){
-            document.querySelector("#users").innerHTML += user.name;
+            liste += `<li>${user.name}</li>`;
         }
-        
-        return prod.length;
-    }).then(function(nbProduct){
-        console.log("Il y a : " + nbProduct + " produits")
+        liste += '</ul>';
+        document.querySelector("#users").innerHTML = liste;
     })
     .catch(function(error){
         console.log(error);
     })
+
