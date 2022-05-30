@@ -10,7 +10,10 @@ const promiseGetUsers = new Promise(function(resolve, reject){
 //Récuperer l'état de la promesse
 promiseGetUsers
     .then(function(prod){
-        console.log(prod);
+        for (let user of prod){
+            document.querySelector("#users").innerHTML += user.name;
+        }
+        
         return prod.length;
     }).then(function(nbProduct){
         console.log("Il y a : " + nbProduct + " produits")
