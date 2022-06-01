@@ -102,16 +102,21 @@
         <footer>
             <div class="footer-div">
                 <ul class="footer-list">
-                    <li>Nos partenaires</li>
-                    <li>Nous contacter</li>
+                    <li data-tabtitle="0"class="active">Nos produits</li>
+                    <li data-tabtitle="1">Nos vendeurs</li>
+                    <li data-tabtitle="2">Autres</li>
                 </ul>
+                <div id="tab0" class="active">
+                    <p>Text 1 : Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div id="tab1">
+                    <p>Text 2 : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolorem...</p>
+                </div>
+                <div id="tab2">
+                    <p>Text 3 : Lorem ipsum dolor..., consectetur adipiscing elit. Dolorem...</p>
+                </div>
             </div>
-            <div class="footer-div">
-                <ul class="footer-list">
-                    <li>Nos produits</li>
-                    <li>Nos vendeurs</li>
-                </ul>
-            </div>
+            <script src="./js/onglets.js"></script>
         </footer>
     </body>
 </html>
