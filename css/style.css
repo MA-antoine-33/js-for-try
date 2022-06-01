@@ -60,4 +60,9 @@ article, aside {
   background-color: #cda7ff;
 }
 
+.gris {
+  background-color: gray;
+  color: red;
+}
+
 /*# sourceMappingURL=style.css.map */
