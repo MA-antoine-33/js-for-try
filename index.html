@@ -7,7 +7,9 @@
         <meta name="description" content="Site codé en JavaScript pour apprendre ce langage">
         <meta name="Keyword" content="Javascript, Test de Javascript">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+       
+        <script src="https://kit.fontawesome.com/4d379a4497.js" crossorigin="anonymous"></script>
+       
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -62,6 +64,35 @@
             </div>
             <script src="./js/events.js"></script>
         </header>
+
+        <section class="section-galerie">
+            <script src="./js/galerie.js"></script>
+            <h2>Galerie de nos supers bananes</h2>
+            <div class="galerie">
+                <div class="galerie-img">
+                    <div class="icon-arrow" id="previous">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div id="diapo">
+                        <div class="diapo-image"><img src="./images/banane_4.jpg" alt="super banane 1"></div>
+                        <div class="diapo-image"><img src="./images/banane_5.jpg" alt="super banane 2"></div>
+                        <div class="diapo-image"><img src="./images/banane_6.jpg" alt="super banane 3"></div>
+                    </div>
+                    <div class="icon-arrow" id="next">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+                <div class="galerie-time">
+                    <div class="galerie-time_icon galerie-time_pause">
+                        <i class="fa-solid fa-pause"></i>
+                     </div>
+                     <div class="galerie-time_icon galerie-time_play">
+                        <i class="fa-solid fa-play"></i>
+                     </div>
+                </div>
+            </div>
+        </section>
+
         <section class="section-banane section-main">
             <article>
                 <h2>Voici notre selection de bananes des plus rafinées</h2>
@@ -102,16 +133,21 @@
         <footer>
             <div class="footer-div">
                 <ul class="footer-list">
-                    <li>Nos partenaires</li>
-                    <li>Nous contacter</li>
+                    <li data-tabtitle="0"class="active">Nos produits</li>
+                    <li data-tabtitle="1">Nos vendeurs</li>
+                    <li data-tabtitle="2">Autres</li>
                 </ul>
+                <div id="tab0" class="active">
+                    <p>Text 1 : Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div id="tab1">
+                    <p>Text 2 : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dolorem...</p>
+                </div>
+                <div id="tab2">
+                    <p>Text 3 : Lorem ipsum dolor..., consectetur adipiscing elit. Dolorem...</p>
+                </div>
             </div>
-            <div class="footer-div">
-                <ul class="footer-list">
-                    <li>Nos produits</li>
-                    <li>Nos vendeurs</li>
-                </ul>
-            </div>
+            <script src="./js/onglets.js"></script>
         </footer>
     </body>
 </html>

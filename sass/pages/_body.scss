@@ -1,13 +1,44 @@
+//Section 1 : Galerie  
+
+.galerie-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#diapo{
+    margin: 20px 125px;
+    .diapo-image {
+        .hidden{
+        display: none;
+        }
+    }
+}
+.galerie-time {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.galerie-time_icon {
+    margin: 0px 15px;
+}
+.icon-arrow, .galerie-time_icon {
+    color: darken($color-secondary, 70);
+    font-size: 40px;
+}
+
+
+
+// Section 2 : Vendeur et article
+
 article, aside {
     display: flex;
     flex-direction: column;
 }
-
 .section-card {
     display: flex;
     background-color: lighten($color-primary, 15);
 }
-
 .card {
     display: flex;
     flex-direction: column;
@@ -24,3 +55,4 @@ article, aside {
         margin: 10px;
     }
 }
+
