@@ -9,7 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
        
         <script src="https://kit.fontawesome.com/4d379a4497.js" crossorigin="anonymous"></script>
-       
+        
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
@@ -66,7 +66,7 @@
         </header>
 
         <section class="section-galerie">
-            <script src="./js/galerie.js"></script>
+            
             <h2>Galerie de nos supers bananes</h2>
             <div class="galerie">
                 <div class="galerie-img">
@@ -74,9 +74,9 @@
                         <i class="fa-solid fa-chevron-left"></i>
                     </div>
                     <div id="diapo">
-                        <div class="diapo-image"><img src="./images/banane_4.jpg" alt="super banane 1"></div>
-                        <div class="diapo-image"><img src="./images/banane_5.jpg" alt="super banane 2"></div>
-                        <div class="diapo-image"><img src="./images/banane_6.jpg" alt="super banane 3"></div>
+                        <img src="./images/banane_4.jpg" alt="super banane 1" class="sup-ban">
+                        <img src="./images/banane_5.jpg" alt="super banane 2" class="sup-ban">
+                        <img src="./images/banane_6.jpg" alt="super banane 3" class="sup-ban">
                     </div>
                     <div class="icon-arrow" id="next">
                         <i class="fa-solid fa-chevron-right"></i>
@@ -84,10 +84,10 @@
                 </div>
                 <div class="galerie-time">
                     <div class="galerie-time_icon galerie-time_pause">
-                        <i class="fa-solid fa-pause"></i>
+                        <i class="fa-solid fa-pause" id="pause"></i>
                      </div>
                      <div class="galerie-time_icon galerie-time_play">
-                        <i class="fa-solid fa-play"></i>
+                        <i class="fa-solid fa-play" id="play"></i>
                      </div>
                 </div>
             </div>
@@ -148,6 +148,7 @@
                 </div>
             </div>
             <script src="./js/onglets.js"></script>
+            <script src="./js/galerie.js"></script>
         </footer>
     </body>
 </html>
