@@ -1,0 +1,27 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &_password, &_email {
+        margin: 10px;
+        font-size: 1.5em;
+        display: flex;
+        flex-direction: column;
+        input {
+            border-radius: 15px;
+            background-color: lighten($color-primary, 20);
+            font-size: 1.5em;
+            margin: 10px;
+        }
+    }
+}
+.button-connexion {
+    @include button-connexion
+}
+.text-success {
+    color: green;
+}
+.text-danger {
+    color: red;
+}

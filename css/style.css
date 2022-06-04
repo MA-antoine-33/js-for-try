@@ -111,6 +111,42 @@ article, aside {
   margin: 10px;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.form_password, .form_email {
+  margin: 10px;
+  font-size: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+.form_password input, .form_email input {
+  border-radius: 15px;
+  background-color: rgba(225, 237, 254, 0.8980392157);
+  font-size: 1.5em;
+  margin: 10px;
+}
+
+.button-connexion {
+  font-size: 1.5em;
+  background-color: #cda7ff;
+  border-radius: 15px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px 25px;
+}
+
+.text-success {
+  color: green;
+}
+
+.text-danger {
+  color: red;
+}
+
 .button-command {
   font-size: 1.5em;
   background-color: #cda7ff;
