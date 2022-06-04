@@ -20,3 +20,11 @@
 @mixin button-sales_hover {
     background-color: $color-background;
 }
+@mixin button-connexion {
+    font-size: 1.5em;
+    background-color: $color-background;
+    border-radius: 15px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px 25px;
+}
