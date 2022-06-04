@@ -27,24 +27,52 @@
         <section class="section-banane section-main">
             <article>
                 <h2>Voici notre selection de bananes des plus rafinées</h2>
-                <div class="section-card">
-                    <div class="product-banane product-banane1 card">
-                        <h3>Le nombre fait la force</h3>
-                        <img src="../images/banane_1.jpg" alt="Notre premier specimen de banane">
-                        <button class="button-command">Ajouter au panier</button>
+                <div class="product-onglet">
+                    <ul class="product-onglet_list">
+                        <li data-tabtitle="0" class="product-active">Le nombre fait la force</li>
+                        <li data-tabtitle="1">La sobriété au service de l'éfficacité</li>
+                        <li data-tabtitle="2">Osez la fantaisie</li>
+                    </ul>
+                    <div id="tab0" class="product-active">
+                        <div class="photo-text">
+                            <div class="photo-price">
+                                <img src="../images/banane_1.jpg" alt="Notre premier specimen de banane" id="image0">
+                                <p>25€</p>
+                            </div>
+                            <div class="text-description">
+                                <p>Lorem ipsum dolor sit amet. In neque dolores et nihil illum 33 vero enim aut minima enim aut architecto magnam et odio internos ad sint vero. Et laborum reiciendis aut facere expedita aut exercitationem nisi qui nulla nostrum At molestiae odit in aspernatur repellendus et rerum sint. Est necessitatibus ipsam qui molestiae iusto ab accusamus doloremque ea consequatur beatae qui nisi ullam in molestias voluptates minima delectus.</p>
+                            </div>
+                        </div>
+                        <button data-command="0" class="button-command">Ajouter au panier</button>
                     </div>
-                    <div class="product-banane product-banane1 card">
-                        <h3>La sobriété au service de l'éfficacité</h3>
-                        <img src="../images/banane_2.jpg" alt="Notre deuxième specimen de banane">
-                        <button class="button-command">Ajouter au panier</button>
+                    <div id="tab1">
+                        <div class="photo-text">
+                            <div class="photo-price">
+                                <img src="../images/banane_2.jpg" alt="Notre deuxième specimen de banane" id="image1">
+                                <p>15€</p>
+                            </div>
+                            <div class="text-description">
+                                <p>Lorem ipsum dolor sit amet. In neque dolores et nihil illum 33 vero enim aut minima enim aut architecto magnam et odieiciendis aut facere expedita aut exercitationem nisi qui nulla nostrum At molestiae odit in aspernatur repellendus et rerum sint. Est necessitatibus ipsam qui molestiae iusto ab accusamus doloremque ea consequatur beatae qui nisi ullam in molestias voluptates minima delectus.</p>
+                            </div>
+                        </div>
+                        <button data-command="1" class="button-command">Ajouter au panier</button>
                     </div>
-                    <div class="product-banane product-banane1 card">
-                        <h3>Osez la fantaisie</h3>
-                        <img src="../images/banane_3.jpg" alt="Notre troisième specimen de banane">
-                        <button class="button-command">Ajouter au panier</button>
+                    <div id="tab2" >
+                        <div class="photo-text">
+                            <div class="photo-price">
+                                <img src="../images/banane_3.jpg" alt="Notre troisième specimen de banane" id="image2">
+                                <p>40€</p>
+                            </div>
+                            <div class="text-description">
+                                <p>Lorem ipsum dolor sit amet. In neque dolores et nihil illum 33 vero eni odio internos ad sint vero. Et laborum reiciendis aut facere expedita aut exercitationem nisi qui nulla nostrum At molestiae odit in aspernatur repellendus et rerum sint. Est necessitatibus ipsam qui molestiae iusto ab accusamus doloremque ea consequatur beatae qui nisi ullam in molestias voluptates minima delectus.</p>
+                            </div>
+                        </div>
+                        <button data-command="2" class="button-command" id="command2">Ajouter au panier</button>
                     </div>
                 </div>
             </article>
+            <script src="../js/onglet-product.js"></script>
+            <script src="../js/command.js"></script>
         </section>
         <footer>
             <div class="footer-div">
