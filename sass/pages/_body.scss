@@ -8,11 +8,17 @@
 }
 #diapo{
     margin: 20px 125px;
-    .diapo-image {
-        .hidden{
+    .hidden{
         display: none;
-        }
     }
+}
+#diapo img {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+#diapo img.show {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
 }
 .galerie-time {
     display: flex;
