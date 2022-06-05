@@ -6,6 +6,25 @@ for (button of buttons) {
     //Je recupere l'url de l'image
     let num = this.getAttribute('data-command');
     
+    //Je créer mon image avec sa source
+    //let create = document.createElement('img')
+    let image = document.getElementById('image-product' + num);
+    let srcImage = image.src;
+    console.log(srcImage);
+    window.location="../html/pannier.html";
+    let pannierImage = document.getElementById('mon-article_image');
+    let changeImage = pannierImage.setAttribute('src', 'srcImage')
+    //create.src = "../images/banane_" + num + ".jpg";
+   // alert(create.innerHTML)
+
+   
+    //Je change de page
+    //window.location="../html/pannier.html";
+    //let addPhoto = document.getElementById('#mon-article');
+    //let addLink = addPhoto.childElement.add(img);
+   // addLink.src = create;
+    //console.log(addLink)
+    
 
 
 
@@ -16,6 +35,6 @@ for (button of buttons) {
 
 
         //Ouvre la page pannier
-        // a rajouter à la fin pour ouvrir le lien window.location="../html/pannier.html";
+       
     });
 };

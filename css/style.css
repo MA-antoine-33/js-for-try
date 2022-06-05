@@ -211,10 +211,6 @@ article, aside {
   margin-left: 10px;
 }
 
-.product-onglet_list-none li {
-  display: none;
-}
-
 .button-command {
   font-size: 1.5em;
   background-color: #cda7ff;
