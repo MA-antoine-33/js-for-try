@@ -11,9 +11,9 @@ for (button of buttons) {
     let image = document.getElementById('image-product' + num);
     let srcImage = image.src;
     console.log(srcImage);
-    window.location="../html/pannier.html";
+    //window.location="../html/pannier.html";
     let pannierImage = document.getElementById('mon-article_image');
-    let changeImage = pannierImage.setAttribute('src', 'srcImage')
+    pannierImage.setAttribute('src', srcImage)
     //create.src = "../images/banane_" + num + ".jpg";
    // alert(create.innerHTML)
 

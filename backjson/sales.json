@@ -1,0 +1,16 @@
+[
+    {
+        "number":"0",
+        "Name":"Grandes oreilles",
+        "phrase":"Son sourire vous donnera la banane",
+        "src":"../images/vendeur_1.jpg",
+        "alt-image":"Le meilleur de nos vendeurs"
+    },
+    {
+        "number":"1",
+        "Name":"Donkey",
+        "phrase":"Personne n'a osé lui dire non",
+        "src":"../images/vendeur_2.jpg",
+        "alt-image":"Le plus costaud de nos vendeurs"
+    }
+]
