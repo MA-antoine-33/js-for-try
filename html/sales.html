@@ -27,18 +27,18 @@
         <section class="section-banane section-main">
             <aside>
                 <h2>Nos meilleurs vendeurs</h2>
-                <div class="section-card">
-                    <div class="aside-sales card">
-                        <h3>Son sourire vous donnera la banane</h3>
-                        <img src="../images/vendeur_1.jpg" alt="Le meilleur de nos vendeurs">
-                        <button class="button-contact-sales">Le joindre</button>
-                    </div>
-                    <div class="aside-sales card">
-                        <h3>Personne n'a osé lui dire non</h3>
-                        <img src="../images/vendeur_2.jpg" alt="Le plus costaud de nos vendeurs">
-                        <button class="button-contact-sales">Le joindre</button>
-                    </div>
-                </div>
+               <form action="" method="post" id="find-sales">
+                   <label for="chose-sales">Faites votre choix parmi notre selections de vendeurs</label>
+                   <select name="chose-sales" id="chose-sales">
+                       <option value="0" id="sales0">Grandes oreilles</option>
+                       <option value="1" id="sales1">Donkey</option>
+                   </select>
+                   <input type="button" value="Valider" id="validation" class="button-connexion">
+               </form>
+               <div id="affiche-sales">
+                   <p id="paragraphesales"></p>
+                   <img src="" alt="" id="imgsales">
+               </div>
             </aside>
         </section>
         <footer>
@@ -55,5 +55,6 @@
                 </ul>
             </div>
         </footer>
+        <script src="../js/sales.js"></script>
     </body>
 </html>
